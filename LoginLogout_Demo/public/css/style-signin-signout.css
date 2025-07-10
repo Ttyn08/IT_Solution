@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f2f7; /* Màu nền nhẹ nhàng */
+    margin: 0;
+    color: #333;
+}
+
+#auth-container {
+    background-color: #ffffff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    position: relative; /* Cho phép định vị tuyệt đối cho các section */
+    overflow: hidden; /* Ẩn nội dung tràn ra khi chuyển đổi */
+}
+
+h2 {
+    color: #007bff; /* Màu xanh nổi bật */
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.auth-section {
+    display: none; /* Mặc định ẩn tất cả các section */
+    animation: fadeIn 0.5s ease-out; /* Hiệu ứng mờ dần */
+}
+
+.auth-section.active {
+    display: block; /* Chỉ hiển thị section đang hoạt động */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="text"] {
+    width: calc(100% - 20px); /* Đảm bảo không tràn */
+    padding: 12px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+p {
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: none; /* Mặc định ẩn */
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

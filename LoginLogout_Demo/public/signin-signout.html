@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Xác thực</title>
+    <link rel="stylesheet" href="./css/style-signin-signout.css">
+    <link rel="shortcut icon" href="images/logo/favico-culery.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="auth-container">
+        <div id="login-section" class="auth-section active">
+            <h2>Đăng nhập</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mật khẩu:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <p>
+                Chưa có tài khoản? <a href="#" id="show-signup">Đăng ký ngay</a>
+            </p>
+            <p>
+                Quên mật khẩu? <a href="#" id="show-forgot-password">Đặt lại mật khẩu</a>
+            </p>
+            <div id="login-message" class="message"></div>
+        </div>
+
+        <div id="signup-section" class="auth-section">
+            <h2>Đăng ký</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-username">Tên người dùng:</label>
+                    <input type="text" id="signup-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Mật khẩu:</label>
+                    <input type="password" id="signup-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Xác nhận mật khẩu:</label>
+                    <input type="password" id="signup-confirm-password" name="confirmPassword" required>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            <p>
+                Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a>
+            </p>
+            <div id="signup-message" class="message"></div>
+        </div>
+
+        <div id="forgot-password-section" class="auth-section">
+            <h2>Quên mật khẩu</h2>
+            <form id="forgot-password-form">
+                <div class="form-group">
+                    <label for="forgot-email">Email của bạn:</label>
+                    <input type="email" id="forgot-email" name="email" required>
+                </div>
+                <button type="submit">Gửi liên kết đặt lại</button>
+            </form>
+            <p>
+                Nhớ mật khẩu? <a href="#" id="show-login-from-forgot">Đăng nhập</a>
+            </p>
+            <div id="forgot-password-message" class="message"></div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
