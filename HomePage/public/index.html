@@ -8,49 +8,67 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
 <body>
 
     <header class="header">
-        <div class="container navbar">
-            <a href="#header" class="logo">
-                <!-- <div class="header-logo">
+        <div class="header-container">
+            <a href="#hero" class="header-logo">
+                <div class="header-logo-img">
                     <img src="./image/logo/menu.png" alt="img-logo" srcset="">
-                </div> -->
+                </div>
                 <p>Foodorithm</p>
             </a>
-            <a href="#final-cta" class="cta-button">Đăng Ký</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar" id="main-navbar">
+                <li><a class="nav-link" href="#hero">Trang chủ</a></li>
+                <li><a class="nav-link" href="menu.html">Thực đơn</a></li>
+                <li><a class="nav-link nav-button" href="register.html">Đăng Ký</a></li>
+            </ul>
         </div>
     </header>
-
     <main>
-
         <section id="hero">
             <div class="hero-content fade-in-section is-visible">
-                <h1>Thực Đơn Của Bạn, <br>Theo Cách Của Bạn!</h1>
-                <p>Khám phá thực đơn được cá nhân hóa hoàn toàn theo sở thích, sức khỏe và mục tiêu dinh dưỡng của riêng bạn. AuraGen ứng dụng thuật toán thông minh để biến mỗi bữa ăn thành một bước tiến trên hành trình sống khỏe của bạn.</p>
-                <a href="#final-cta" class="cta-button">TẠO THỰC ĐƠN CỦA TÔI</a>
+                <h1>Thực Đơn Của Bạn, Theo Cách Của Bạn!</h1>
+                <p>Khám phá thực đơn được cá nhân hóa hoàn toàn theo sở thích, sức khỏe và mục tiêu dinh dưỡng của riêng bạn. Foodorithm ứng dụng thuật toán thông minh để biến mỗi bữa ăn thành một bước tiến trên hành trình sống khỏe của bạn.</p>
+                <a href="register.html" class="hero-btn">TẠO THỰC ĐƠN CỦA BẠN</a>
             </div>
         </section>
 
         <section id="who-for" class="fade-in-section">
-            <div class="container">
-                <h2 class="section-title">Dù Bạn Là Ai, AuraGen Đều Có Thể Giúp Sức</h2>
+            <div class="who-for-container">
+                <h2 class="section-title">Dù Bạn Là Ai, Foodorithm Đều Có Thể Giúp Bạn</h2>
                 <div class="who-for-grid">
                     <div class="who-for-item">
+                        <div class="who-for-item-image">
+                            <img src="./image/home/sportsperson.png" alt="sportsperson">
+                        </div>
                         <h3>Người Luyện Tập Thể Thao</h3>
                         <p>Tối ưu hóa dinh dưỡng để tăng cơ, giảm mỡ và bứt phá hiệu suất.</p>
                     </div>
                     <div class="who-for-item">
+                        <div class="who-for-item-image">
+                            <img src="./image/home/workaholic.png" alt="workaholic">
+                        </div>
                         <h3>Người Bận Rộn</h3>
                         <p>Tiết kiệm thời gian với những gợi ý thực đơn nhanh chóng, tiện lợi cho sinh viên và nhân viên văn phòng.</p>
                     </div>
                     <div class="who-for-item">
+                        <div class="who-for-item-image">
+                            <img src="./image/home/food-allergy.png" alt="special-diet">
+                        </div>
                         <h3>Người Có Chế Độ Đặc Biệt</h3>
                         <p>Dễ dàng kiểm soát bệnh lý (tiểu đường, huyết áp...) hoặc tuân thủ chế độ ăn kiêng với thực đơn được thiết kế riêng.</p>
                     </div>
                     <div class="who-for-item">
+                        <div class="who-for-item-image">
+                            <img src="./image/home/general-peson.png" alt="general-peson">
+                        </div>
                         <h3>Người Dùng Phổ Thông</h3>
                         <p>Nâng tầm bữa ăn hàng ngày, thoát khỏi sự đơn điệu và thiếu kiến thức dinh dưỡng.</p>
                     </div>
@@ -59,7 +77,7 @@
         </section>
 
         <section id="how-it-works" class="fade-in-section">
-            <div class="container">
+            <div class="how-it-works-container">
                 <h2 class="section-title">Hành Trình Ẩm Thực Chỉ Với 3 Bước Đơn Giản</h2>
                 <div class="steps-container">
                     <div class="step">
@@ -82,7 +100,7 @@
         </section>
 
         <section id="features" class="fade-in-section">
-            <div class="container">
+            <div class="features-container">
                 <h2 class="section-title">Không Chỉ Là Gợi Ý - Đó Là Khoa Học Dinh Dưỡng Dành Cho Bạn</h2>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -104,19 +122,18 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="final-cta" class="fade-in-section">
-            <div class="container">
+            <div class="final-cta-container">
                 <h2 class="section-title">Sẵn Sàng Thay Đổi Thói Quen Ăn Uống Của Bạn?</h2>
-                <p>Hãy để AuraGen trở thành người đồng hành đáng tin cậy trên hành trình chinh phục sức khỏe và vóc dáng mơ ước.</p>
-                <a href="#" class="cta-button">ĐĂNG KÝ MIỄN PHÍ NGAY</a>
+                <p>Hãy để Foodorithm trở thành người đồng hành đáng tin cậy trên hành trình chinh phục sức khỏe và vóc dáng mơ ước.</p>
+                <a href="register.html" class="final-cta-button">ĐĂNG KÝ MIỄN PHÍ NGAY</a>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2025 AuraGen. All rights reserved.</p>
         </div>
     </footer>
